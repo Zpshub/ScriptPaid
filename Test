@@ -407,7 +407,7 @@ end
 
 function ntf(msg,Delay) 
     game.StarterGui:SetCore("SendNotification",{
-    Title = "Name Hub",
+    Title = "Zps Hub",
     Icon = "http://www.roblox.com/asset/?id=11819232204";
     Text = msg,
     Duration = Delay
@@ -468,17 +468,17 @@ else
 end
 
 local getserver = requesthttps({
-    ["Url"] = "http://IP:103.178.235.4/whitelist?Key="..Key.."&ds="..discord_id, -- ใส่ Ip
+    ["Url"] = "http://IP:2083/whitelist?Key="..Key.."&ds="..discord_id, -- ใส่ Ip
     ["Medthod"] = "GET"
 })
 
 local getserverwhitelist = requesthttps({
-    ["Url"] = "http://IP:103.178.235.4/whitelist?Key="..Key.."&ds="..discord_id, -- ใส่ Ip
+    ["Url"] = "http://IP:2083/whitelist?Key="..Key.."&ds="..discord_id, -- ใส่ Ip
     ["Medthod"] = "GET"
 })
 
 local gethwid = requesthttps({
-    ["Url"] = "http://IP:103.178.235.4/Hwid", -- ใส่ Ip
+    ["Url"] = "http://IP:2083/Hwid", -- ใส่ Ip
 })
 
 task.wait(1)
