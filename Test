@@ -468,17 +468,17 @@ else
 end
 
 local getserver = requesthttps({
-    ["Url"] = "http://IP:2083/whitelist?Key="..Key.."&ds="..discord_id, -- ใส่ Ip
+    ["Url"] = "http://IP:localhost/whitelist?Key="..Key.."&ds="..discord_id, -- ใส่ Ip
     ["Medthod"] = "GET"
 })
 
 local getserverwhitelist = requesthttps({
-    ["Url"] = "http://IP:2083/whitelist?Key="..Key.."&ds="..discord_id, -- ใส่ Ip
+    ["Url"] = "http://IP:localhost/whitelist?Key="..Key.."&ds="..discord_id, -- ใส่ Ip
     ["Medthod"] = "GET"
 })
 
 local gethwid = requesthttps({
-    ["Url"] = "http://IP:2083/Hwid", -- ใส่ Ip
+    ["Url"] = "http://IP:localhost/Hwid", -- ใส่ Ip
 })
 
 task.wait(1)
