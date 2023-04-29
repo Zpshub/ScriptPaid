@@ -1,0 +1,11 @@
+repeat wait() until game:IsLoaded();
+if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7449423635 then
+    if _G.KAITUN then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zpshub/ScriptPaid/main/Zpskaitun"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zpshub/ScriptPaid/main/ZpsPC"))()
+    end
+    game.Players.LocalPlayer:Kick("90/112/115/32/72/117/98/32/78/111/116/32/83/117/112/112/111/114/116/32/71/97/109/101")
+    wait(1)
+    game:Shutdown()
+end
